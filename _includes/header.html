@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -9,9 +9,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- Logo and Site Title -->
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="{{ '/img/logo.svg' | prepend: site.baseurl }}" alt="Company Logo" style="height: 40px; fill: white; margin-right: 10px; display: inline-block;" class="svg-logo">
+            <a class="navbar-brand page-scroll" href="#page-top" style="display: flex; align-items: center;">
+                <!-- Company Logo -->
+                <img src="{{ '/img/logo.svg' | prepend: site.baseurl }}" alt="Company Logo" class="logo" style="height: 30px; margin-right: 10px; filter: invert(1);">
+                <!-- Site Title -->
                 <span style="color: white;">{{ site.title }}</span>
             </a>
         </div>
@@ -37,13 +38,3 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-
-<!-- Header -->
-<header>
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-lead-in">Welcome To 404 Security!</div>
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-        </div>
-    </div>
-</header>
